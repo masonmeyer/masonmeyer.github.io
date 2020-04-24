@@ -2,7 +2,7 @@
 
 
 body {
-  font-family: Helvetica;
+  font-family: Garamond;
   font-size: 18px;
 }
 
@@ -15,7 +15,7 @@ body {
   font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
 }
 
-#menu .title {
+#menu .title { 
 }
 
 #menu ul {
