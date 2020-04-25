@@ -19,6 +19,9 @@ body {
 }
 
 #menu .title { 
+}
+
+#menu .title a { 
   font-size:18px; 
   letter-spacing: 1px;
   color: black; 
