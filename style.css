@@ -1,10 +1,12 @@
 /* this is copied from Patrick Collison's site.  */
 
-@font-face { font-family: Baskerville; src: url('font.ttf'); } 
+@font-face { font-family: Baskerville; src: url('font.ttf'); }
+@font-face { font-family: Garamond; src: url('Garamond.ttc'); } 
 
 body {
-  font-family: Baskerville;
+  font-family: Helvetica;
   font-size: 18px;
+  letter-spacing: 1px;
 }
 
 #menu {
