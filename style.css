@@ -15,7 +15,7 @@ body {
   text-align: right;
   width: 150px;
   font-family: Avenir;
-  line-height: 18px;
+  line-height: 6px;
 }
 
 #menu .title { 
@@ -33,7 +33,6 @@ body {
 }
 
 #menu li a {
-  display: inline-block;
   color: #0864c7;
 }
 
