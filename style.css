@@ -39,19 +39,9 @@ body {
   color: #0864c7;
 }
 
-#left {
-  height: 1px;
-  float: left;
-  display: block;
-  min-width: 0;
-  overflow: hidden;
-  width: 14vw;
-  margin: 0;
-  padding: 0;
-}
-
 #main {
   margin-top: 20vh;
+  margin-left: 14vw;
   float: left;
   width: 45vw;
 }
@@ -63,12 +53,9 @@ body {
     margin-right: 1vw;
   }
 
-  #left {
-    width: 0px;
-  }
-
   #main {
     margin-top: 5vh;
-    width: 90vw;
+    margin-left: 5vw;
+    width: 85vw;
   }
 }
