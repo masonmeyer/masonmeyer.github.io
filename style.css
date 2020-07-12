@@ -3,9 +3,13 @@
 
 body {
   font-family: Garamond;
-  font-size: 114%;
-  letter-spacing: .13ch;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: .04em;
+  /*
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  */
 }
 
 #menu {
@@ -13,20 +17,20 @@ body {
   margin-top: 7.5vh;
   margin-right: 3.5vw;
   text-align: right;
-  width: 12ch;
+  width: 8em;
   font-family: Avenir;
-  line-height: 1vh;
+  line-height: .4em;
 }
 
 #menu .title a { 
-  font-size:100%; 
-  letter-spacing: .1ch;
+  font-size:1em; 
+  letter-spacing: .07em;
   color: black; 
   text-decoration: none;
 }
 
 #menu ul {
-  font-size: 83%;
+  font-size: .83em;
   letter-spacing: 0ch;
   list-style-type: none;
 }
@@ -50,4 +54,21 @@ body {
   margin-top: 20vh;
   float: left;
   width: 45vw;
+}
+
+@media (max-width:450px) {
+
+  #menu {
+    margin-top: 5vh;
+    margin-right: 1vw;
+  }
+
+  #left {
+    width: 0px;
+  }
+
+  #main {
+    margin-top: 5vh;
+    width: 90vw;
+  }
 }
