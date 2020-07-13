@@ -4,8 +4,8 @@
 body {
   font-family: Garamond;
   font-size: 18px;
-  line-height: 1.5em;
-  letter-spacing: .04em;
+  line-height: 1.6em;
+  letter-spacing: .045em;
   /*
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
