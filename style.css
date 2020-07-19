@@ -47,6 +47,12 @@ body {
   width: 45vw;
 }
 
+p .comment {
+  font-size: 16px;
+  font-style: italic;
+  color: #919191;
+}
+
 @media (max-width:450px) {
 
   #menu {
