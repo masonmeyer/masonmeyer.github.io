@@ -44,7 +44,7 @@ body {
   margin-top: 20vh;
   margin-left: 14vw;
   float: left;
-  width: 45vw;
+  width: 55vw;
 } 
 
 p.comment {
@@ -55,10 +55,13 @@ p.comment {
 }
 
 h3 {
-  margin-top: -10;
+  margin-top: -0em;
 }
 .indent {
-  margin-left: .5vw;
+  margin-left: 1vw;
+  margin-top: -.5em;
+  border-left: 6px solid #6ECAFF;
+  padding: 0.01em 16px;
 }
 
 a {
