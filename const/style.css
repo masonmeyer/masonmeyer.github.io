@@ -99,6 +99,10 @@ a {
   color: #0864c7;
 }
 
+h3 {
+  margin-top: 0;
+}
+
 @media (max-width:450px) {
 
   #menu {
