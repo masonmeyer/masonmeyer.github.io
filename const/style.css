@@ -58,6 +58,10 @@ p.comment {
   margin-left: 1vw;
 }
 
+a {
+  color: #0864c7;
+}
+
 @media (max-width:450px) {
 
   #menu {
