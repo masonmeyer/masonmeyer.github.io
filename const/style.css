@@ -54,8 +54,11 @@ p.comment {
   color: #919191;
 }
 
+h3 {
+  margin-top: 0;
+}
 .indent {
-  margin-left: 1vw;
+  margin-left: .5vw;
 }
 
 a {
