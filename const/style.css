@@ -45,13 +45,17 @@ body {
   margin-left: 14vw;
   float: left;
   width: 45vw;
-}
+} 
 
 p.comment {
   margin-top: 0;
   font-size: 14px;
   font-style: italic;
   color: #919191;
+}
+
+.indent {
+  margin-left: 1vw;
 }
 
 @media (max-width:450px) {
