@@ -95,6 +95,11 @@ p.comment {
   padding: .3em 1em;
 }
 
+.home {
+  margin-top: 25vh
+  border-left: 6px solid #6ECAFF;
+}
+
 a {
   color: #0864c7;
 }
@@ -114,5 +119,9 @@ h3 {
     margin-top: 5vh;
     margin-left: 5vw;
     width: 85vw;
+  }
+
+  .home {
+    margin-top: 5vh
   }
 }
