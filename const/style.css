@@ -96,7 +96,8 @@ p.comment {
 }
 
 .home {
-  margin-top: 25vh
+  margin-top: 25vh;
+  padding: .3em 1em;
   border-left: 6px solid #6ECAFF;
 }
 
@@ -122,6 +123,6 @@ h3 {
   }
 
   .home {
-    margin-top: 5vh
+    margin-top: 5vh;
   }
 }
