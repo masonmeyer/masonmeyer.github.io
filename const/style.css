@@ -91,7 +91,7 @@ p.comment {
 .indent {
   margin-left: 1vw;
   margin-top: -.7em;
-  border-left: 6px solid #6ECAFF;
+  border-left: 6px solid #6ECAFF; /* #90EE90 #ffc966 */
   padding: .3em 1em;
 }
 
