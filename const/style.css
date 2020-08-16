@@ -96,9 +96,8 @@ p.comment {
 }
 
 .home {
-  margin-top: 25vh;
-  padding: .3em 1em;
-  border-left: 6px solid #6ECAFF;
+  /* margin-top: 35vh; */
+  padding: 2.5em 1em;
 }
 
 a {
