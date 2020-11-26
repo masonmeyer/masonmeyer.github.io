@@ -5,7 +5,7 @@ body {
   font-family: Garamond;
   font-size: 18px;
   line-height: 1.6em;
-  letter-spacing: .045em;
+  letter-spacing: .05em;
   /*
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
@@ -81,30 +81,49 @@ body {
   width: 55vw;
 } 
 
-p.comment {
+.comment {
   margin-top: 0;
   font-size: 14px;
-  font-style: italic;
   color: #919191;
 }
 
-.indent {
+.indent_1 {
   margin-left: 1vw;
   margin-top: -.7em;
-  border-left: 6px solid #6ECAFF; /* #90EE90 #ffc966 */
+  border-left: 6px solid #6ECAFF;
   padding: .3em 1em;
 }
 
-.home {
-  /* margin-top: 35vh; */
-  padding: 2em 0 0;
+.indent_2 {
+  margin-left: 1vw;
+  margin-top: -.7em;
+  border-left: 6px solid #90EE90;
+  padding: .3em 1em;
 }
+
+.indent_3 {
+  margin-left: 1vw;
+  margin-top: -.7em;
+  border-left: 6px solid #ffc966;
+  padding: .3em 1em;
+}
+
+.indent_4 {
+  margin-left: 1vw;
+  margin-top: -.7em;
+  border-left: 6px solid #ffabae;
+  padding: .3em 1em;
+}
+
+/*  salmon: #faa9a0
+    teal: #40e0db;
+    pink: #efbad6; */
 
 a {
   color: #0864c7;
 }
 
-h3 {
+h3, h4 {
   margin-top: 0;
 }
 
