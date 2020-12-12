@@ -1,0 +1,41 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas Pokemon Game</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="pokemon.js"></script>
+</head>
+<body>
+	<img src="static/loading.gif" id="loading" alt="Italian Trulli">
+
+	<div id="winner" style="display:none;">
+		<img src="static/winner.gif"  alt="Italian Trulli" >
+		<h1> CONGRATULATIONS NEW CHAMPION!! </h1>
+	</div>
+
+    <canvas id="canvas" width="460" height="460"></canvas>
+    <br><br>
+
+	<button type="button" onclick="showMenu()" style="width:75px;height:75px;display:none;" class="collapsible">Click for Phone Buttons</button>
+	<br><br>
+
+    <div id="phone_buttons"  style="width:460;display:none;">
+		<div style="text-align:center;float:auto;" >
+		  <button onclick="move1()" style="width:75px;height:75px;">1</button>
+		  <button onclick="move2()" style="width:75px;height:75px;">2</button>
+		   <button onclick="move3()" style="width:75px;height:75px;">3</button>
+		  <button onclick="move4()" style="width:75px;height:75px;">4</button>
+		</div>
+
+		<div style="text-align:center;float:right;" >
+			<br><br>
+		  <button onclick="moveup()" style="width:75px;height:75px;">&#8679;</button><br><br>
+		  <button onclick="moveleft()" style="width:75px;height:75px;">&#8678;</button>
+		   <button onclick="moveenter()" style="width:75px;height:75px;">&#10004;</button>
+		  <button onclick="moveright()" style="width:75px;height:75px;">&#8680;</button><br><br>
+		  <button onclick="movedown()" style="width:75px;height:75px;">&#8681;</button>
+		</div>
+	</div>
+
+</body>
+</html>
