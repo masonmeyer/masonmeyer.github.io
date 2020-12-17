@@ -1,86 +1,72 @@
  // SECTION 1: Variable Initialization
+var lol = true;
 
 var wild_names = [
-"Jenna",
-"Hannah",
-"Owen",
-"Matthew",
-"Olivia",
-"Anna",
-"Ryan",
-"Angela",
-"Finn",
-"Haven",
-"Lil Kody",
+"Scholar Mason",
+"Cyclops Ryan",
+"Model McKenna",
+"Batter Dad",
+"Timeless Mom",
+"Baby Lila",
 'Squirtle',
 'Charmander',
 'Bulbasaur',
-'Dratini',
-'Ghastly',
-'Eevee',
-'Magikarp',
-'Jigglypuff',
-'Lapras',
-'Pikachu',
-'Psyduck'
+'Pikachu'
+];
+
+var people_names = [
+"Scholar Mason",
+"Cyclops Ryan",
+"Model McKenna",
+"Batter Dad",
+"Timeless Mom",
+"Baby Lila",
 ];
 
 
 var boss_names = [
-"Ms. Patty",
-"The Post Star",
-"Snowplow Driver",
-"Mr. Varney", 
-"Mr. Margison", 
-"Mystery House"];
-
-var eeveelutions = ["Jolteon", "Vaporeon", "Flareon"];
+"Mr. Childers",
+"Furnace Dust",
+"5:30am Seminary",
+"Firepit Mosquitos", 
+"Yardwork Saturdays", 
+"The Demon Dog"
+];
 
 var pokemon_data = {
-'Jenna' : {image : "static/jenna.png", move1 : "Tesla Tackle", move2 : "Bong Blast", move3: "Snow Hair Slap", move4 : "Billie Burst", evolution : "Maddie", power : [20, 10, 15, 30]},
-'Maddie' : {image : "static/maddie.png", move1 : "Cannon6D Flash", move2 : "Bee Stingers", move3: "Lightning Booty", move4 : "Kody Krush", evolution : -1, power : [20, 10, 40, 50]},
 
-'Hannah' : {image : "static/hannah.png", move1 : "LAX Leap", move2 : "Hadlock Pound", move3: "Volun-tear You Apart", move4 : "Aerial Angel", evolution : "Colton", power : [30, 30, 20, 40]},
-'Colton' : {image : "static/colton.png", move1 : "Gentle Fist", move2 : "Trusty Lassoo", move3: "Waterbend Whip", move4 : "Aerial Angel", evolution : -1, power : [50, 20, 30, 40]},
+'Baby Lila' : {image : "static/lila.png", move1 : "Grrr", move2 : "WOOF!", move3: "Pee on the mat", move4 : "Pee on Mason in the car", evolution : "Fancy Lila", power : [10, 20, 10, 20]},
+'Fancy Lila' : {image : "static/lila1.png", move1 : "Hula hit", move2 : "Tails-a-waggin' torture", move3: "Rabbit chase", move4 : "Fetch fight", evolution : "Perfect Lila", power : [20, 30, 25, 20]},
+'Perfect Lila' : {image : "static/lila2.png", move1 : "Bellyrub burro-blast", move2 : "Limping lambaste", move3: "Kuma-crew attack", move4 : "Steal the steak", evolution : -1, power : [50, 40, 20, 30]},
 
-'Owen' : {image : "static/owen.png", move1 : "Lick", move2 : "Flick", move3: "Dick Out", move4 : "Toy Chuck", evolution : "Allie", power : [10, 10, 20, 20]},
-'Allie' : {image : "static/allie.png", move1 : "Screech", move2 : "Evil Giggle", move3: "Scratch", move4 : "Satanic Posession", evolution : -1, power : [10, 20, 20, 50]},
+'Batter Dad' : {image : "static/dad.png", move1 : "Home run", move2 : "Punt", move3: "Grand slam", move4 : "Umpire bribe", evolution : "Vandal Dad", power : [10, 10, 20, 20]},
+'Vandal Dad' : {image : "static/dad1.png", move1 : "Jugendliche Straftäter", move2 : "Missionary mojo", move3: "Munich maelstrom", move4 : "BMW Backhand", evolution : "Thriller Dad", power : [30, 25, 20, 20]},
+'Thriller Dad' : {image : "static/dad2.png", move1 : "Cyborg hip kick", move2 : "Boeing Barrage", move3: "Dad-joke", move4 : "Woodshop Attack", evolution : -1, power : [40, 30, 50, 20]},
 
-'Matthew' : {image : "static/matthew.png", move1 : "Splash", move2 : "Scratch", move3: "Tear Up", move4 : "Patty Pounce", evolution : "William", power : [10, 10, 10, 20]},
-'William' : {image : "static/william.png", move1 : "Flail", move2 : "Stick Poke", move3: "Cry", move4 : "Patty Pound", evolution : -1, power : [10, 10, 10, 30]},
+'Timeless Mom' : {image : "static/mom.png", move1 : "Pants-gun shootout", move2 : "Pumpkin toss", move3: "Wilkes whop", move4 : "Enum Claw", evolution : "New Grad Mom", power : [20, 10, 20, 10]},
+'New Grad Mom' : {image : "static/mom1.png", move1 : "80s hair whip", move2 : "White nylon nunchucks", move3: "Audiology attack", move4 : "Diploma shuriken", evolution : "Batmom", power : [30, 35, 10, 20]},
+'Batmom' : {image : "static/mom2.png", move1 : "Hallmark marathon", move2 : "Board-game night brawl", move3: "Organ key-change", move4 : "Pioneer woman Pie-throw", evolution : -1, power : [50, 30, 40, 20]},
 
-'Olivia' : {image : "static/olivia.png", move1 : "Kopnięcie", move2 : "Polish Pinch", move3: "Basketball Bounce", move4 : "Nitro Nugget", evolution : "Julia", power : [20, 20, 30, 40]},
-'Julia' : {image : "static/julia.png", move1 : "Stempel", move2 : "Polish Punch", move3: "Connor Karate Chop", move4 : "Nugget Nuke", evolution : -1, power : [10, 20, 30, 50]},
+'Scholar Mason' : {image : "static/mason.png", move1 : "Monkey Ball Smash", move2 : "Fablehaven Woods trap", move3: "Swordsmasters Slash", move4 : "'r' word synonym", evolution : "Detective Mason", power : [10, 10, 20, 20]},
+'Detective Mason' : {image : "static/mason1.png", move1 : "Break a piano string", move2 : "Recorder solo", move3: "Early bedtime", move4 : "AP test Ambush", evolution : "Backflip Mason", power : [35, 30, 10, 20]},
+'Backflip Mason' : {image : "static/mason2.png", move1 : "Flee to Hawaii", move2 : "Self-destruct (his neck)", move3: "Boston Blizzard", move4 : "Croquetta Charge", evolution : -1, power : [20, 40, 30, 50]},
 
-'Anna' : {image : "static/anna.png", move1 : "Speedy Sprint", move2 : "Selfie Slap", move3: "Anna Ambush", move4 : "Macy Mash", evolution : "Leah", power : [10, 20, 40, 30]},
-'Leah' : {image : "static/leah.png", move1 : "Bite", move2 : "Queer Quake", move3: "Pastel Pow", move4 : "Maya Mangle", evolution : "Schwetty", power : [10, 50, 10, 40]},
-'Schwetty' : {image : "static/schwetty.png", move1 : "Dark Alchemy", move2 : "64 Palms", move3: "Bloodbend", move4 : "Flyin Ryan", evolution : -1, power : [10, 50, 40, 40]},
+'Cyclops Ryan' : {image : "static/ryan.png", move1 : "Trick shot", move2 : "Glass table headbutt", move3: "Imaginext adventure", move4 : "Glasses Groovin'", evolution : "Hungry Ryan", power : [20, 20, 10, 10]},
+'Hungry Ryan' : {image : "static/ryan1.png", move1 : "Even trickier shot", move2 : "Marathon sprint", move3: "Basketball hookshot", move4 : "Miner's Burgers Buffet", evolution : "Viking Lumberjack", power : [20, 25, 30, 20]},
+'Viking Lumberjack' : {image : "static/ryan2.png", move1 : "The TRICKIEST shot", move2 : "Parkour Pounce", move3: "Utah Yee-haw", move4 : "Trash-talk in portuguese", evolution : -1, power : [40, 20, 30, 50]},
 
-'Ryan' : {image : "static/ryan.png", move1 : "Sokol Shuffle", move2 : "Sharingan", move3: "Ryan Ram", move4 : "Dak Attack", evolution : "Kyle", power : [40, 30, 10, 20]},
-'Kyle' : {image : "static/kyle.png", move1 : "Tackett Tackle", move2 : "Divine Punishment", move3: "Boom Roasted", move4 : "Dak Attack", evolution : "Holly", power : [20, 100, 50, 20]},
-'Holly' : {image : "static/holly.png", move1 : "Tatoosh Whoosh + Momaire Mash", move2 : "Pharma-Flip", move3: "Hollylujah", move4 : "Dak Attack", evolution : -1, power : [40, 30, 100, 20]},
+'Model McKenna' : {image : "static/mck.png", move1 : "BITE ME!", move2 : "Daisy Scout Damage", move3: "McKennikins Mania", move4 : "Cathcart Craze", evolution : "Weird McKenna", power : [20, 10, 20, 10]},
+'Weird McKenna' : {image : "static/mck1.png", move1 : "Unicycle jousting", move2 : "Valley View Valley Girl", move3: "Back handspring kick", move4 : "Beg for a pet dog", evolution : "Cyber-kenna", power : [30, 30, 20, 20]},
+'Cyber-kenna' : {image : "static/mck2.png", move1 : "Dinner seating chart", move2 : "J&tP sonic boom", move3: "High FODMAP belch", move4 : "Speedread a novel", evolution : -1, power : [40, 30, 50, 20]},
 
-'Angela' : {image : "static/angela.png", move1 : "Troisi Tickle", move2 : "Kathy Kick", move3: "Angelunge", move4 : "Bella Blitz", evolution : "Chris", power : [10, 20, 20, 20]},
-'Chris' : {image : "static/chris.png", move1 : "Troisi Tackle", move2 : "Waterski Slash", move3: "Nipple Twist", move4 : "Bella Barrage", evolution : "Anthony", power : [30, 40, 20, 30]},
-'Anthony' : {image : "static/anthony.png", move1 : "Troisi Triumph", move2 : "Airsoft Assault", move3: "Bong Blast", move4 : "Bella Bombardment", evolution : -1, power : [50, 20, 30, 40]},
+// Bosses
 
-'Finn' : {image : "static/finn.png", move1 : "Irish Jig", move2 : "Corner Shot", move3: "Finn Flip", move4 : "Rudy Rumble", evolution : "Jude", power : [20, 20, 30, 20]},
-'Jude' : {image : "static/jude.png", move1 : "Dragon Summon", move2 : "Producer Pow", move3: "Jude Jab", move4 : "Aggie Attack", evolution : "Aidan", power : [40, 20, 30, 30]},
-'Aidan' : {image : "static/aidan.png", move1 : "Startup Slam", move2 : "Flex Gains", move3: "Aidan Assault", move4 : "Lazlo Lunge", evolution : -1, power : [30, 30, 50, 50]},
-
-'Haven' : {image : "static/haven.png", move1 : "Splash", move2 : "Fake Tears", move3: "Scratch", move4 : "Chainsaw Massacre", evolution : "Jack", power : [10, 10, 10, 50]},
-'Jack' : {image : "static/jack.png", move1 : "Flail", move2 : "Fake Tears", move3: "Nerf Gun", move4 : "Jack Attack", evolution : "Cole", power : [10, 10, 10, 30]},
-'Cole' : {image : "static/cole.png", move1 : "Tackle", move2 : "Scratch", move3: "Ripstick Ram", move4 : "Alpaca Punch", evolution : -1, power : [10, 20, 30, 40]},
-
-'Lil Kody' : {image : "static/lilkody.png", move1 : "Head Tilt", move2 : "Grr", move3: "Woof", move4 : "WOOF", evolution : "Kody", power : [30, 10, 20, 30]},
-'Kody' : {image : "static/kody.png", move1 : "Snout Push", move2 : "Tennis Ball Tear", move3: "Kody Krush", move4 : "DEFEND CHAD", evolution : -1, power : [20, 10, 30, 60]},
-
-'Ms. Patty' : {image : "static/patty.png", move1 : "Patty Pounce", move2 : "Patty Pounce", move3: "LeapFrog Lunge", move4 : "LeapFrog Lunge", evolution : -1, power : [40, 40, 50, 50]},
-'The Post Star' : {image : "static/poststar.png", move1 : "Public Shame", move2 : "Public Shame", move3: "Stone Throw", move4 : "Stone Throw", evolution : -1, power : [40, 40, 50, 50]},
-'Mr. Margison' : {image : "static/margison.png", move1 : "Call 911", move2 : "Call 911", move3: "Sue Association", move4 : "Sue Association", evolution : -1, power : [40, 40, 50, 50]},
-'Mystery House' : {image : "static/monster.png", move1 : "Demonic Curse", move2 : "Demonic Curse", move3: "Blood Sacrifice", move4 : "Blood Sacrifice", evolution : -1, power : [40, 40, 50, 50]},
-'Mr. Varney' : {image : "static/varney.png", move1 : "Ding Dong Dash", move2 : "Ding Dong Dash", move3: "Femur SMASH", move4 : "Femur SMASH", evolution : -1, power : [40, 40, 50, 50]},
-'Snowplow Driver' : {image : "static/snowplow.png", move1 : "Run Over", move2 : "Run Over", move3: "Avalanche", move4 : "Avalanche", evolution : -1, power : [40, 40, 50, 50]},
+"Mr. Childers" : {image : "static/childers.png", move1 : "Ignore important email", move2 : "Ignore important email", move3: "Refuse to swap class", move4 : "Refuse to swap class", evolution : -1, power : [40, 40, 50, 50]},
+"Furnace Dust" : {image : "static/furnace.png", move1 : "Dry air", move2 : "Dry air", move3: "Coughing fit", move4 : "Coughing fit", evolution : -1, power : [40, 40, 50, 50]},
+"5:30am Seminary" : {image : "static/sem.png", move1 : "Sleeping in back row", move2 : "Sleeping in back row", move3: "Black ice car crash", move4 : "Black ice car crash", evolution : -1, power : [40, 40, 50, 50]},
+"Firepit Mosquitos" : {image : "static/mosquito.png", move1 : "Selectively bite Mason", move2 : "Selectively bite Mason", move3: "Move the party inside", move4 : "Move the party inside", evolution : -1, power : [40, 40, 50, 50]},
+"Yardwork Saturdays" : {image : "static/yardwork.png", move1 : "Green bin dump over", move2 : "Green bin dump over", move3: "Re-planting the weeds", move4 : "Re-planting the weeds", evolution : -1, power : [40, 40, 50, 50]},
+"The Demon Dog" : {image : "static/dog.png", move1 : "RAFF RRAFFF RAAAAFFFFF", move2 : "RAFF RRAFFF RAAAAFFFFF", move3: "GrrrrRRARRARARARARRRR", move4 : "GrrrrRRARRARARARARRRR", evolution : -1, power : [40, 40, 50, 50]},
 
 // Pokemon
 
@@ -96,50 +82,20 @@ var pokemon_data = {
 'Ivysaur' : {image : "static/ivysaur.png", move1 : "Giga Drain", move2 : "Magical Leaf", move3: "Vine Whip", move4 : "Body Slam", evolution : "Venasaur", power : [20, 20, 20, 30]},
 'Venasaur' : {image : "static/venasaur.png", move1 : "Earthquake", move2 : "Sludge Bomb", move3: "Giga Drain", move4 : "Plant Frenzy", evolution : -1, power : [40, 50, 30, 50]},
 
-'Dratini' : {image : "static/dratini.png", move1 : "Tackle", move2 : "Dragon Breath", move3: "Splash", move4 : "Headbutt", evolution : "Dragonair", power : [10, 10, 20, 10]},
-'Dragonair' : {image : "static/dragonair.png", move1 : "Aurora Beam", move2 : "Dragon Breath", move3: "Ice Beam", move4 : "Surf", evolution : "Dragonite", power : [20, 20, 20, 30]},
-'Dragonite' : {image : "static/dragonite.png", move1 : "Thunder Punch", move2 : "Hyper Beam", move3: "Dragon Rush", move4 : "Fly", evolution : -1, power : [40, 50, 30, 50]},
-
-'Ghastly' : {image : "static/ghastly.png", move1 : "Curse", move2 : "Astonish", move3: "Smog", move4 : "Shadow Sneak", evolution : "Haunter", power : [10, 10, 20, 10]},
-'Haunter' : {image : "static/haunter.png", move1 : "Shadow Sneak", move2 : "Sludge Bomb", move3: "Lick", move4 : "Shadow Ball", evolution : "Gengar", power : [20, 20, 20, 30]},
-'Gengar' : {image : "static/gengar.png", move1 : "Dark Pulse", move2 : "Shadow Punch", move3: "Sludge Wave", move4 : "Shadow Rush", evolution : -1, power : [40, 50, 30, 50]},
-
-
-'Eevee' : {image : "static/eevee.png", move1 : "Tackle", move2 : "Headbutt", move3: "Quick Attack", move4 : "Scratch", evolution : eeveelutions[Math.floor(Math.random() * 2)], power : [10, 10, 10, 10]},
-'Vaporeon' : {image : "static/vaporeon.png", move1 : "Dive", move2 : "Surf", move3: "Hydro Pump", move4 : "Ice Beam", evolution : -1, power : [30, 30, 50, 30]},
-'Jolteon' : {image : "static/jolteon.png", move1 : "Quick Attack", move2 : "Signal Beam", move3: "Thunderbolt", move4 : "Volt Tackle", evolution : -1, power : [20, 30, 40, 50]},
-'Flareon' : {image : "static/flareon.png", move1 : "Flame Charge", move2 : "Scorching Sands", move3: "Fire Spin", move4 : "Fire Blast", evolution : -1, power : [20, 40, 30, 50]},
-
-'Magikarp' : {image : "static/magikarp.png", move1 : "Splash", move2 : "Flail", move3: "Tackle", move4 : "Dive", evolution : "Gyrados", power : [10, 20, 20, 30]},
-'Gyrados' : {image : "static/gyrados.png", move1 : "Dragon Rush", move2 : "Waterfall", move3: "Hyperbeam", move4 : "Giga Impact", evolution : -1, power : [30, 30, 50, 40]},
-
-'Jigglypuff' : {image : "static/jigglypuff.png", move1 : "Pound", move2 : "Sing", move3: "Uproar", move4 : "Rollout", evolution : "Wigglytuff", power : [10, 20, 30, 20]},
-'Wigglytuff' : {image : "static/wigglytuff.png", move1 : "Body Slam", move2 : "Play Rough", move3: "Dazzling Gleam", move4 : "Hyper Voice", evolution : -1, power : [30, 40, 50, 40]},
-
-'Lapras' : {image : "static/lapras.png", move1 : "Ice Beam", move2 : "Thunderbolt", move3: "Surf", move4 : "Hyper Beam", evolution : -1, power : [10, 20, 30, 50]},
-
 'Pikachu' : {image : "static/pikachu.png", move1 : "Quick Attack", move2 : "Spark", move3: "Tail Slap", move4 : "Thunderbolt", evolution : "Raichu", power : [10, 20, 10, 40]},
 'Raichu' : {image : "static/raichu.png", move1 : "Body Slam", move2 : "Iron Tail", move3: "Thunder", move4 : "Volt Tackle", evolution : -1, power : [20, 30, 50, 50]},
-
-'Psyduck' : {image : "static/psyduck.png", move1 : "Confusion", move2 : "Water Gun", move3: "Scratch", move4 : "Ice Beam", evolution : "Golduck", power : [50, 20, 20, 30]},
-'Golduck' : {image : "static/golduck.png", move1 : "Ice Beam", move2 : "Slash", move3: "Hydro Pump", move4 : "Psychic", evolution : -1, power : [40, 30, 50, 40]},
 
 };
 
 class Pokemon {
   constructor(name, image_name, move1, move2, move3, move4, evolution, hp, power) {    
     this.name = name;
-
-
     this.tinyimage = new Image();
     this.tinyimage.src = image_name.slice(0, 7) + "tiny/" + image_name.slice(7);
-
     this.image = new Image();
     this.image.src = image_name.slice(0, 7) + "med/" + image_name.slice(7);
-
     this.largeimage = new Image();
     this.largeimage.src = image_name.slice(0, 7) + "large/" + image_name.slice(7);
-
     this.move1 = move1;
     this.move2 = move2;
     this.move3 = move3;
@@ -147,7 +103,6 @@ class Pokemon {
     this.evolution = evolution;
     this.hp = hp;
     this.exp = 0;
-
     this.power1 = power[0];
     this.power2 = power[1];
     this.power3 = power[2];
@@ -155,83 +110,21 @@ class Pokemon {
   }
 }
 
-// Buttons to Keyboard Strokes
-
-// function moveenter() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':13, 'which':13}); 
-//   document.dispatchEvent (evt); 
-// }
-
-
-// function moveleft() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':37, 'which':37}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function moveup() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':38, 'which':38}); 
-//   document.dispatchEvent (evt); 
-// }
-
-
-// function moveright() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':39, 'which':39}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function movedown() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':40, 'which':40}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function move1() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':49, 'which':49}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function move2() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':50, 'which':50}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function move3() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':51, 'which':51}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function move4() {
-//   var evt = new KeyboardEvent('keydown', {'keyCode':52, 'which':52}); 
-//   document.dispatchEvent (evt); 
-// }
-
-// function showMenu() {
-//   var menu = document.getElementById("phone_buttons");
-//   menu.style.display = "block";
-// }
-
-
+var first_pokemon = true;
 var in_battle = false;
-
 var last_stroke = -1;
-
 var current_pokemon = 0;
-
-
 var text_case = "welcome";
-
 var caught = [];
 var working = false;
 var champion_battle = -1;
 var champion_current = -1;
 var delta_x = 100;
 var delta_y = 100;
-
 window.onload = function() {
   'use strict';
-
   var canvas = document.getElementById('canvas');
   var ctx = canvas.getContext('2d');
-
   var w = document.getElementById('canvas').offsetWidth;
   var h = document.getElementById('canvas').offsetHeight;
   var terrainImageLoaded = true,
@@ -242,121 +135,64 @@ window.onload = function() {
   var speed = 100;
   var modifier = 100;
   var score = 0;
-
   //terrain image
   var terrainImage = new Image();
   terrainImage.src = 'static/terrain.jpg';
-
   //house image
   var houseImage = new Image();
   houseImage.src = 'static/house.png';
-
   var battleImage = new Image();
   battleImage.src = "static/battle.jpg";
-
   //moves
   var fire_move = new Image();
   fire_move.src = "static/moves/fire.png";
-  var aggie_move = new Image();
-  aggie_move.src = "static/moves/aggie-rudy.png";
-  var angel_move = new Image();
-  angel_move.src = "static/moves/angel.png";
-  var bella_move = new Image();
-  bella_move.src = "static/moves/bella.png";
-  var billie_move = new Image();
-  billie_move.src = "static/moves/billie.png";
-  var dak_move = new Image();
-  dak_move.src = "static/moves/dak.png";
-  var kody_move = new Image();
-  kody_move.src = "static/moves/kody.png";
-  var lazlo_move = new Image();
-  lazlo_move.src = "static/moves/lazlo.png";
-  var macy_move = new Image();
-  macy_move.src = "static/moves/macy.png";
-  var maya_move = new Image();
-  maya_move.src = "static/moves/maya.png";
-  var nugget_move = new Image();
-  nugget_move.src = "static/moves/nugget.png";
-  var ryan_move = new Image();
-  ryan_move.src = "static/moves/ryan.png";
-  var toy_move = new Image();
-  toy_move.src = "static/moves/toy.png";
-
   var moves = {
-  'Jenna' : billie_move,
-  'Maddie' : kody_move,
-
-  'Hannah' : angel_move,
-  'Colton' : angel_move,
-
-  'Owen' : toy_move,
-  'Allie' : fire_move,
-
-  'Matthew' : fire_move,
-  'William' : fire_move,
-
-  'Olivia' : nugget_move,
-  'Julia' : nugget_move,
-
-  'Anna' : macy_move,
-  'Leah' : maya_move,
-  'Schwetty' : ryan_move,
-
-  'Ryan' : dak_move,
-  'Kyle' : dak_move,
-  'Holly' : dak_move,
-
-  'Angela' : bella_move,
-  'Chris' : bella_move,
-  'Anthony' : bella_move,
-
-  'Finn' : aggie_move,
-  'Jude' : aggie_move,
-  'Aidan' : lazlo_move,
-
-  'Haven' : fire_move,
-  'Jack' : fire_move,
-  'Cole' : fire_move,
-
-  'Lil Kody' : kody_move,
-  'Kody' : kody_move,
-
+  'Baby Lila' : fire_move,
+  'Fancy Lila' : fire_move,
+  'Perfect Lila' : fire_move,
+  'Batter Dad' : fire_move,
+  'Juvenile Delinquent Dad' : fire_move,
+  'Michael Jackson Dad' : fire_move,
+  'Timeless Mom' : fire_move,
+  'New Grad Mom' : fire_move,
+  'Batmom' : fire_move,
+  'Scholar Mason' : fire_move,
+  'Detective Mason' : fire_move,
+  'Backflip Mason' : fire_move,
+  'Cyclops Ryan' : fire_move,
+  'Hungry Ryan' : fire_move,
+  'Viking Lumberjack Ryan' : fire_move,
+  'Model McKenna' : fire_move,
+  'Definitely Not-weird McKenna' : fire_move,
+  'Cyber-kenna' : fire_move,
   };
-
-
   //main sound
   var mainTheme = new Audio('static/main.mp3');
   mainTheme.loop = true;
   mainTheme.volume = .5;
-
-
   var battleTheme = new Audio('static/battle.mp3');
   battleTheme.loop = true;
   battleTheme.volume = .5;
-
   var evolutionTheme = new Audio('static/evolution.mp3');
   evolutionTheme.loop = false;
   evolutionTheme.volume = .5;
-
   //pokeball-selection
   var pokePick = new Audio('static/pickup.mp3');
   pokePick.volume = 0.8;
-
   //pokeball-selection
   var wildFind = new Audio('static/wild.mp3');
   wildFind.volume = 0.8;
-
   //player image
   var playerImage = new Image();
   playerImage.src = 'static/player.png';
-
   //pokeball image
   var pokeballImage = new Image();
   pokeballImage.src = 'static/pokeball.png';
-
   //pokeball-selection
   var winnerAudio = new Audio('static/winner.mp3');
+  winnerAudio.loop = false;
   winnerAudio.volume = 0.8;
+
 
   /**
    * It will hold all the pockeball data like x and y axis position
@@ -380,14 +216,11 @@ window.onload = function() {
     pokeball.spritePosition = Math.floor(Math.random() * 4) + 0; // get position from 0-4
   };
 
-
 var attack = {
     image: fire_move,
     x: 100,
     y: 100,
   };
-
-
 
 var wild_pokemon = {
     who: 0,
@@ -406,6 +239,11 @@ var wild_pokemon = {
     wild_pokemon.spritePosition = Math.floor(Math.random() * 4) + 0; // get position from 0-4
 
     let name = wild_names[Math.floor(Math.random() * wild_names.length) + 0];
+
+    if (first_pokemon) {
+      name = people_names[Math.floor(Math.random() * people_names.length) + 0];
+    }
+
     let poke = pokemon_data[name]
     let pokemon_object = new Pokemon(name, poke["image"], poke["move1"], poke["move2"], poke["move3"], poke["move4"], poke["evolution"], 100, poke["power"]);
     wild_pokemon.who = pokemon_object
@@ -1036,7 +874,7 @@ function battle() {
           break;
         
         case "used_move":
-          ctx.fillText(`${caught[current_pokemon].name} used ${caught[current_pokemon].move4}!`, 10, h - 75);
+          ctx.fillText(`${caught[current_pokemon].name} used fireball!`, 10, h - 75);
             if (last_stroke != -1) {
               text_case = "welcome";
               last_stroke = -1
@@ -1045,6 +883,7 @@ function battle() {
           break;
 
         case "wild_encounter":
+          first_pokemon = false;
           working = true;
           ctx.fillText(`You encountered a wild ${wild_pokemon.who.name}! What will you do?`, 10, h - 75);
           ctx.fillText('1. Battle!', 10, h - 55);
@@ -1199,11 +1038,13 @@ function battle() {
           break;
 
         case "winner":
+          console.log('In winning case!');
           ctx.clearRect(0, 0, canvas.width, canvas.height);
-          mainTheme.pause();
-          winnerAudio.play();
           var winnerGIF = document.getElementById("winner");
           winnerGIF.style.display = "block";
+          mainTheme.pause();
+          if (lol) {winnerAudio.play();}
+          lol = false;
           break;
 
         default:
@@ -1225,8 +1066,6 @@ function battle() {
     );
 
   }
-
-
 
    // SECTION Z: Closing Section
   /**
@@ -1359,23 +1198,38 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
-assetsLoaded()
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// wild_pokemon.generateWild();
-// caught.push(wild_pokemon.who);
-// caught.push(wild_pokemon.who);
-// caught.push(wild_pokemon.who);
-// caught.push(wild_pokemon.who);
+assetsLoaded();
+
+let name1 = "Perfect Lila";
+let poke1 = pokemon_data[name1];
+let pokemon_object1 = new Pokemon(name1, poke1["image"], poke1["move1"], poke1["move2"], poke1["move3"], poke1["move4"], poke1["evolution"], 100, poke1["power"]);
+caught.push(pokemon_object1);
+wild_pokemon.generateWild();
+let name2 = "Batmom";
+let poke2 = pokemon_data[name2];
+let pokemon_object2 = new Pokemon(name2, poke2["image"], poke2["move1"], poke2["move2"], poke2["move3"], poke2["move4"], poke2["evolution"], 100, poke2["power"]);
+caught.push(pokemon_object2);
+wild_pokemon.generateWild();
+let name3 = "Thriller Dad";
+let poke3 = pokemon_data[name3];
+let pokemon_object3 = new Pokemon(name3, poke3["image"], poke3["move1"], poke3["move2"], poke3["move3"], poke3["move4"], poke3["evolution"], 100, poke3["power"]);
+caught.push(pokemon_object3);
+wild_pokemon.generateWild();
+let name4 = "Backflip Mason";
+let poke4 = pokemon_data[name4];
+let pokemon_object4 = new Pokemon(name4, poke4["image"], poke4["move1"], poke4["move2"], poke4["move3"], poke4["move4"], poke4["evolution"], 100, poke4["power"]);
+caught.push(pokemon_object4);
+wild_pokemon.generateWild();
+let name5 = "Viking Lumberjack";
+let poke5 = pokemon_data[name5];
+let pokemon_object5 = new Pokemon(name5, poke5["image"], poke5["move1"], poke5["move2"], poke5["move3"], poke5["move4"], poke5["evolution"], 100, poke5["power"]);
+caught.push(pokemon_object5);
+wild_pokemon.generateWild();
+let name6 = "Cyber-kenna";
+let poke6 = pokemon_data[name6];
+let pokemon_object6 = new Pokemon(name6, poke6["image"], poke6["move1"], poke6["move2"], poke6["move3"], poke6["move4"], poke6["evolution"], 100, poke6["power"]);
+caught.push(pokemon_object6);
+wild_pokemon.generateWild();
 
 };
 
