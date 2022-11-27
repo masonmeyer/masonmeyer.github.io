@@ -81,6 +81,14 @@ body {
   width: 65vw;
 } 
 
+#intropar {
+  margin-left: 290px;
+} 
+
+#photo {
+  width: 200px; float: left; padding: 2em;
+}
+
 .comment {
   margin-top: 0;
   font-size: 14px;
@@ -127,7 +135,7 @@ h3, h4 {
   margin-top: 0;
 }
 
-@media (max-width:450px) {
+@media (max-width:800px) {
 
   #menu {
     margin-top: 5vh;
@@ -138,6 +146,14 @@ h3, h4 {
     margin-top: 5vh;
     margin-left: 5vw;
     width: 85vw;
+  }
+
+  #intropar {
+    margin-left: 0px;
+  } 
+  
+  #photo {
+    width: 100%; float: none; padding: 2em;
   }
 
   .home {
