@@ -6,10 +6,6 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   letter-spacing: .05em;
-  /*
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-  */
   -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein .5s; /* Firefox < 16 */
     -ms-animation: fadein .5s; /* Internet Explorer */
