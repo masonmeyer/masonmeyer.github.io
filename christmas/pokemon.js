@@ -1129,7 +1129,7 @@ function battle() {
   function assetsLoaded() {
       pokeball.generatePosition();
       wild_pokemon.generateWild();
-      document.getElementById("loading").height = "0";
+      document.getElementById("loadingOverlay").style.display = 'none';
       sleep(2000);
       refreshIntervalId = setInterval(update, 100);
       update();
@@ -1232,4 +1232,3 @@ assetsLoaded();
 // wild_pokemon.generateWild();
 
 };
-
